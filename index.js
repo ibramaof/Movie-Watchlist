@@ -3,6 +3,7 @@ const searchText = document.getElementById('search-text')
 const mainLayOut = document.getElementById('main-layout')
 const noData = document.getElementById('no-data')
 const noFilmFound = document.getElementById('no-film')
+const myWatchlist = document.getElementById('watchlist-page')
 const apiKey = '338ca256'
 
 
@@ -13,7 +14,6 @@ const apiKey = '338ca256'
 
 
 searchBtn.addEventListener('click', fetchForFilms)
-
 async function fetchForFilms() {
     const movieName = searchText.value
     const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}&t=${movieName}`)

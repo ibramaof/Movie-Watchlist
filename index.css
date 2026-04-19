@@ -17,7 +17,6 @@ body {
 h1 {
     font-size: 43px;
     font-weight: bolder;
-    cursor: pointer;
 }
 
 h3 {
@@ -26,6 +25,19 @@ h3 {
     cursor: pointer;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: #DFDDDD;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .no-film {
     color: #DFDDDD;
@@ -167,9 +179,15 @@ input {
 
 
 .no-data {
-    display: block;
-    text-align: center;
+    height: calc(100vh - 208px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
 }
+
 
 /* results layouts */
 
