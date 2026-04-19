@@ -16,21 +16,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body id="watchlist-page">
     <header>
         <h1 class="search-page" id="search-page">My Watchlist</h1>
         <h3 class="watchlist-page" id="watchlist-page"><a href="index.html">Find your film</a></h3>
     </header>
     <main>
-
+        <div class="watchlist-results" id="watchlist-results">
         </div>
-        <div class="no-data" id="no-data">
+        <div class="no-data watchlist-no-data" id="watchlist-no-data">
             <P class="no-film" id="no-film">Your watchlist is looking a little empty...</P>
-            <button class="add-btn" id="add-bar"> <a href="index.html"><i
+            <button class="add-btn" id="add-btn"> <a href="index.html"><i
                         class="fa-solid fa-circle-plus fa-shake"></i></i>
                     Let’s add some movies!</a></button>
         </div>
     </main>
+    <script src="watchlist.js" type="module"></script>
 </body>
 
 </html>

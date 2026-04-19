@@ -240,7 +240,8 @@ input {
     justify-content: space-between;
 }
 
-.add-btn {
+.add-btn,
+.remv-btn {
     background-color: white;
     border: none;
     cursor: pointer;
