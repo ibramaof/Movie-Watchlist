@@ -17,14 +17,21 @@ body {
 h1 {
     font-size: 43px;
     font-weight: bolder;
-
+    cursor: pointer;
 }
 
 h3 {
     font-size: 14px;
     font-weight: bold;
-
+    cursor: pointer;
 }
+
+
+.no-film {
+    color: #DFDDDD;
+    font-size: 18px;
+}
+
 
 .runtime {
     color: #111827;
@@ -157,13 +164,11 @@ input {
     font-size: 120px;
 }
 
-.no-film {
-    color: #DFDDDD;
-    font-size: 18px;
-}
+
 
 .no-data {
     display: block;
+    text-align: center;
 }
 
 /* results layouts */
@@ -220,6 +225,7 @@ input {
 .add-btn {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 .fa-circle-plus {

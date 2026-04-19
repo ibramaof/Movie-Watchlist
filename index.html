@@ -18,8 +18,8 @@
 
 <body>
     <header>
-        <h1>Find your film</h1>
-        <h3>My Watchlist</h3>
+        <h1 class="search-page" id="search-page">Find your film</h1>
+        <h3 class="watchlist-page" id="watchlist-page">My Watchlist</h3>
     </header>
 
     <main id="main-layout">
@@ -31,45 +31,17 @@
                 <input id="search-text" type="text" placeholder="Search for a movie...">
             </div>
             <div class="btn-div">
-                <button class="search-btn" id="search-bar">Search</button>
+                <button class="search-btn" id="search-btn">Search</button>
             </div>
 
         </div>
-        <!-- <div class="movie-card" id="moive-card">
-            <div class="poster-div" id="poster-div">
-                <img src="https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_SX300.jpg"
-                    class="poster" id="poster">
-            </div>
-            <div class="movie-info" id="movie-info">
-                <div class="header-title" id="header-title">
-                    <p class="movie-title" id="movie-title">Star Wars: Episode IV - A New Hope</p>
-                    <div class="movie-rating" id="movie-raring">
-                        <span class="material-symbols-outlined">
-                            star
-                        </span>
-                        <p class="rating" id="rating">8.1</p>
-                    </div>
-                </div>
-                <div class="movie-data" id="movie-data">
-                    <p class="runtime" id="runtime"> 117 min</p>
-                    <p class="genre" id="genre">Action, Adventure, Fantasy</p>
-                    <button class="add-btn" id="add-bar"><i class="fa-solid fa-circle-plus fa-shake"></i></i>
-                        Watchlist</button>
-                </div>
-                <p class="plot" id="plot">
-                    Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to
-                    save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue
-                    Princess Leia from the mysterious Darth ...
-
-                </p>
-            </div>
+        <div class="results" id="results">
         </div>
-        <div class="divider" id="divider"></div> -->
-        <div class="no-data">
+        <div class="no-data" id="no-data">
             <span class="material-symbols-outlined">
                 movie_info
             </span>
-            <P class="no-film">Start exploring</P>
+            <P class="no-film" id="no-film">Start exploring</P>
         </div>
     </main>
     <script src="index.js" type="module"></script>
