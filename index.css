@@ -26,8 +26,34 @@ h3 {
 
 }
 
+.runtime {
+    color: #111827;
+    font-size: 12px;
+    font-weight: 200;
+}
 
+.movie-title {
+    color: black;
+    font-family: 18px;
+}
 
+.rating,
+.genre {
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.plot {
+    color: #6B7280;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+}
 
 
 
@@ -37,7 +63,6 @@ h3 {
 /* --------layout-------- */
 
 main {
-    height: calc(100vh - 208px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,11 +78,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
-
-
+    margin-bottom: 50px;
 }
+
+/* Search bar */
 
 .search-bar {
     width: 462px;
@@ -121,9 +145,7 @@ input {
 }
 
 
-
-
-
+/* Initial laoding page (no-data)  */
 
 .no-data .material-symbols-outlined {
     font-variation-settings:
@@ -138,4 +160,74 @@ input {
 .no-film {
     color: #DFDDDD;
     font-size: 18px;
+}
+
+.no-data {
+    display: block;
+}
+
+/* results layouts */
+
+.movie-card {
+    width: 462px;
+    height: 148px;
+    display: flex;
+    gap: 21px;
+
+}
+
+.poster {
+    width: 99px;
+
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.header-title .material-symbols-outlined {
+    color: #FEC654;
+    margin: 0 4px 0 8px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+}
+
+.movie-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    background-color: white;
+    border: none;
+}
+
+.fa-circle-plus {
+    font-size: 16px;
+}
+
+.divider {
+    border: 1.5px solid #E5E7EB;
+    width: 450px;
+    margin: 20px auto;
 }
